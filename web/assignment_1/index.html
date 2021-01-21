@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinosaurs - Web Assignment 1</title>
+  <style>
+    @keyframes alt-color {
+      0%, 100% {
+        color: #e76f51;
+      }
+      50% {
+        color: #2a9d8f;
+      }
+    }
+    @keyframes alt-bg {
+      0%, 100% {
+        background-image: url('https://static.scientificamerican.com/sciam/cache/file/7C1857C2-6599-46D8-975D728A0439C784.jpg');
+      }
+      50% {
+        background-image: url('https://www.rollingstone.com/wp-content/uploads/2020/01/Dinosaur.jpg');
+      }
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .wrap {
+      width: 100vw;
+      height: 100vh;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-image: radial-gradient(rgba(38, 70, 83, 0.8), rgba(38, 70, 83, 1));
+    }
+    .h1 {
+      margin: 0px;
+      padding: 30px 0px;
+      text-align: center;
+      animation: alt-color 2s step-end 0s infinite alternate;
+    }
+    .img-wrap {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      margin: auto;
+      border: 8px solid white;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation: alt-bg 2s step-end 0s infinite alternate;
+      box-shadow: 0px 4px 8px 2px rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="h1">Dinosaurs Are Crazy Creatures</h1>
+    <div class="img-wrap"></div>
+  </div>
+</body>
+</html>
